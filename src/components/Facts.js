@@ -9,11 +9,21 @@ const Facts = () => {
   return (
     <section className='section-sm lg:section-lg'>
       <div className='container mx-auto flex flex-col lg:flex-row lg:gap-x-[30px]'>
-        <div className='flex-1 flex flex-wrap gap-x-[70px] gap-y-[35px]'>
+        <div
+          className='flex-1 flex flex-wrap gap-x-[70px] gap-y-[35px]'
+          data-aos='fade-up'
+        >
           <div className='lg:max-w-[241px]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2'>
+            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
               0
-              <CountUp start={1} end={5} enableScrollSpy id='counter' />+
+              <CountUp
+                start={1}
+                end={5}
+                duration={2}
+                enableScrollSpy
+                id='counter'
+              />
+              +
             </div>
             <div className='text-xl font-bold mb-1'>Years of Experience</div>
             <p>
@@ -22,8 +32,8 @@ const Facts = () => {
             </p>
           </div>
           <div className='lg:max-w-[241px]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2'>
-              <CountUp start={1} end={5} enableScrollSpy={true} />
+            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
+              <CountUp start={1} end={5} duration={2} enableScrollSpy={true} />
               K+
             </div>
             <div className='text-xl font-bold mb-1'>Happy Clients</div>
@@ -33,8 +43,9 @@ const Facts = () => {
             </p>
           </div>
           <div className='lg:max-w-[241px]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2'>
-              <CountUp start={1} end={15} enableScrollSpy={true} />+
+            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
+              <CountUp start={1} end={15} duration={2} enableScrollSpy={true} />
+              +
             </div>
             <div className='text-xl font-bold mb-1'>Experienced Trainers</div>
             <p>
@@ -43,8 +54,9 @@ const Facts = () => {
             </p>
           </div>
           <div className='lg:max-w-[241px]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2'>
-              <CountUp start={1} end={24} enableScrollSpy={true} />+
+            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
+              <CountUp start={1} end={24} duration={2} enableScrollSpy={true} />
+              +
             </div>
             <div className='text-xl font-bold mb-1'>Monthly Classes</div>
             <p>
@@ -58,7 +70,7 @@ const Facts = () => {
             <h2 className='h2 mb-12'>
               Relax And Enjoy a Personalized Day Yoga With Us.
             </h2>
-            <div>
+            <div className='mb-2'>
               <img src={Image} alt='' />
             </div>
             <div>
