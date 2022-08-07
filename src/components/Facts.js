@@ -65,7 +65,7 @@ const Facts = () => {
             </p>
           </div>
         </div>
-        <div className='flex-1 -order-1 lg:order-none'>
+        <div className='flex-1 -order-1 lg:order-none' data-aos='fade-down'>
           <div className='flex flex-col justify-center h-full lg:pl-[100px]'>
             <h2 className='h2 mb-12'>
               Relax And Enjoy a Personalized Day Yoga With Us.
