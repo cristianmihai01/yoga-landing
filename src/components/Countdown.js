@@ -11,9 +11,9 @@ const Countdown = () => {
     <section className='section-sm lg:section-lg'>
       <div className='container mx-auto flex flex-col lg:flex-row lg:gap-x-[30px]'>
         <div className='flex-1 flex flex-wrap gap-x-[70px] gap-y-[35px]'>
-          <div className='max-w-[241px]'>
+          <div className='lg:max-w-[241px]'>
             <div className='text-3xl font-bold lg:text-[50px] mb-2'>
-              0<CountUp start={0} end={5} duration={1} />+
+              <CountUp start={1} end={15} duration={4} useEasing={true} />+
             </div>
             <div className='text-xl font-bold mb-1'>Years of Experience</div>
             <p>
@@ -21,9 +21,9 @@ const Countdown = () => {
               instructions.
             </p>
           </div>
-          <div className='max-w-[241px]'>
+          <div className='lg:max-w-[241px]'>
             <div className='text-3xl font-bold lg:text-[50px] mb-2'>
-              <CountUp start={1} end={5} duration={1} useEasing={true} />
+              <CountUp start={1} end={5} duration={5} useEasing={true} />
               K+
             </div>
             <div className='text-xl font-bold mb-1'>Happy Clients</div>
@@ -32,7 +32,7 @@ const Countdown = () => {
               very satisfied.
             </p>
           </div>
-          <div className='max-w-[241px]'>
+          <div className='lg:max-w-[241px]'>
             <div className='text-3xl font-bold lg:text-[50px] mb-2'>
               <CountUp start={1} end={15} duration={3} useEasing={true} />+
             </div>
@@ -42,7 +42,7 @@ const Countdown = () => {
               and meditation.
             </p>
           </div>
-          <div className='max-w-[241px]'>
+          <div className='lg:max-w-[241px]'>
             <div className='text-3xl font-bold lg:text-[50px] mb-2'>
               <CountUp start={1} end={24} duration={3} useEasing={true} />+
             </div>

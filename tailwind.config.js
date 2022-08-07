@@ -4,6 +4,11 @@ module.exports = {
     fontFamily: {
       primary: 'Inter',
     },
+    container: {
+      padding: {
+        sm: 'rem',
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
