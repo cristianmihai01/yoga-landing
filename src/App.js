@@ -1,12 +1,13 @@
 import React from 'react';
 
 // import components
-import Countdown from './components/Countdown';
+import Facts from './components/Facts';
 
 const App = () => {
   return (
     <div>
-      <Countdown />
+      <div className='h-[2000px]'></div>
+      <Facts />
     </div>
   );
 };
