@@ -10,8 +10,8 @@ const Nav = () => {
   return (
     <nav
       className={`${
-        nav && 'sticky top-0 h-[80px] w-full max-w-[90vw] lg:max-w-[1170px]'
-      } bg-white rounded-md h-[90px] shadow-lg px-8 z-10 transition-all flex items-center`}
+        nav ? 'top-0 h-[80px]' : 'top-4'
+      } fixed bg-white w-full max-w-[90vw] lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-lg px-8 z-10 transition-all flex items-center`}
     >
       Nav
     </nav>
