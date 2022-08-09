@@ -4,10 +4,21 @@
 
 @layer base {
   body {
-    @apply font-primary;
+    @apply font-primary text-paragraph;
+  }
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    @apply text-heading;
+  }
+  .h1 {
+    @apply text-[36px] leading-[46px] lg:text-[70px] lg:leading-[80px] font-extrabold;
   }
   .h2 {
-    @apply text-[26px] leading-9 lg:text-[50px] lg:leading-[60px] font-bold;
+    @apply text-[26px] leading-[36px] lg:text-[50px] lg:leading-[60px] font-bold;
   }
   .section-sm {
     @apply py-[70px];

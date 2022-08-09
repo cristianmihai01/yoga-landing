@@ -43,8 +43,8 @@ module.exports = {
       },
       bg: '#F5F6F9',
       shape: '#E8EEF0',
+      white: '#FFFFFF',
     },
-
     extend: {},
     backgroundImage: {
       hero: "url('/src/assets/img/hero/bg.png')",

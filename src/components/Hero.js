@@ -12,11 +12,7 @@ const Hero = () => {
         <Header />
         <div className='flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-48'>
           <div className='flex-1 lg:mt-6'>
-            <h1
-              className='text-4xl font-extrabold mb-3 lg:text-[70px] lg:leading-tight'
-              data-aos='fade-down'
-              data-aos-delay='500'
-            >
+            <h1 className='h1' data-aos='fade-down' data-aos-delay='500'>
               Yoga to <br /> Release Stress
             </h1>
             <p className='mb-6' data-aos='fade-down' data-aos-delay='600'>

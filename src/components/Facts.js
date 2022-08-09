@@ -14,10 +14,10 @@ const Facts = () => {
           data-aos='fade-up'
         >
           <div className='w-[45%]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
+            <h2 className='h2 mb-2 lg:mb-4'>
               0
               <CountUp start={1} end={5} duration={2} enableScrollSpy />+
-            </div>
+            </h2>
             <div className='text-xl font-bold mb-3'>Years of Experience</div>
             <p className='max-w-[240px]'>
               We are 05 years of experienced in this yoga field. Giving the best
@@ -25,10 +25,10 @@ const Facts = () => {
             </p>
           </div>
           <div className='w-[45%]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
+            <h2 className='h2 mb-2 lg:mb-4'>
               <CountUp start={1} end={5} duration={2} enableScrollSpy />
               K+
-            </div>
+            </h2>
             <div className='text-xl font-bold mb-3'>Happy Clients</div>
             <p className='max-w-[240px]'>
               We have over five thousand clients all over the world. They are
@@ -36,10 +36,10 @@ const Facts = () => {
             </p>
           </div>
           <div className='w-[45%]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
+            <h2 className='h2 mb-2 lg:mb-4'>
               <CountUp start={1} end={15} duration={2} enableScrollSpy={true} />
               +
-            </div>
+            </h2>
             <div className='text-xl font-bold mb-3'>Experienced Trainers</div>
             <p className='max-w-[240px]'>
               We have over fifteen dedicated and experienced trainer for yoga
@@ -47,10 +47,10 @@ const Facts = () => {
             </p>
           </div>
           <div className='w-[45%]'>
-            <div className='text-3xl font-bold lg:text-[50px] mb-2 lg:mb-4'>
+            <h2 className='h2 mb-2 lg:mb-4'>
               <CountUp start={1} end={24} duration={2} enableScrollSpy={true} />
               +
-            </div>
+            </h2>
             <div className='text-xl font-bold mb-3'>Monthly Classes</div>
             <p className='max-w-[240px]'>
               Yoga is a physical, mental and spritual practice discipline. We
