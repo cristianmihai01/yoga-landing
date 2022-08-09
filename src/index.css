@@ -20,6 +20,9 @@
   .h2 {
     @apply text-[26px] leading-[36px] lg:text-[50px] lg:leading-[60px] font-bold;
   }
+  .h3 {
+    @apply text-[18px] leading-[28px] lg:text-[34px] lg:leading-[44px] font-semibold;
+  }
   .section-sm {
     @apply py-[70px];
   }
