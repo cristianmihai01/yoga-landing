@@ -5,6 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // import components
+import Header from './components/Header';
 import Hero from './components/Hero';
 import Facts from './components/Facts';
 

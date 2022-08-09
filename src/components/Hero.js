@@ -1,17 +1,15 @@
 import React from 'react';
-
-// import components
-import Nav from './Nav';
 // import parallax
 import { Parallax } from 'react-parallax';
 // import image
 import Image from '../assets/img/hero/guy.png';
+import Header from './Header';
 
 const Hero = () => {
   return (
     <section className='min-h-[618px] lg:min-h-[815px] pt-[38px] bg-hero bg-no-repeat bg-right-top'>
       <div className='container mx-auto'>
-        <Nav />
+        <Header />
         <div className='flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-48'>
           <div className='flex-1 lg:mt-6'>
             <h1

@@ -16,10 +16,41 @@ module.exports = {
       lg: '1024px',
       xl: '1170px',
     },
-    extend: {
-      backgroundImage: {
-        hero: "url('/src/assets/img/hero/bg.png')",
+    colors: {
+      orange: {
+        DEFAULT: '#FF9F66',
+        100: '#FFF1E8',
+        200: '#FFB081',
       },
+      green: {
+        DEFAULT: '#258675',
+        100: '#D4EEE9',
+        200: '#94CAC0',
+        300: '#45A090',
+      },
+      yellow: '#EDC988',
+      pink: {
+        DEFAULT: 'FF7D6B',
+        100: '#FFE9E4',
+        200: '#FEAEA3',
+      },
+      heading: '#1C0A0A',
+      paragraph: '#584F49',
+      stroke: {
+        1: '#B0B4C0',
+        2: '#CFCFCF',
+        3: '#F4F5F7',
+      },
+      bg: '#F5F6F9',
+      shape: '#E8EEF0',
+    },
+
+    extend: {},
+    backgroundImage: {
+      hero: "url('/src/assets/img/hero/bg.png')",
+    },
+    boxShadow: {
+      primary: '0px 18px 36px rgba(0, 0, 0, 0.05)',
     },
   },
   plugins: [],
