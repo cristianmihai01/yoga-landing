@@ -8,7 +8,7 @@ import { Parallax } from 'react-parallax';
 
 const Hero = () => {
   return (
-    <section className='min-h-[618px] lg:min-h-[815px] bg-red-200 pt-[38px]'>
+    <section className='min-h-[618px] lg:min-h-[815px] bg-red-200 pt-[38px] bg-hero bg-no-repeat bg-right-top'>
       <div className='container mx-auto'>
         <Nav />
         <div className='flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-48'>

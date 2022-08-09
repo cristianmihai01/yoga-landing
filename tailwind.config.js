@@ -16,7 +16,11 @@ module.exports = {
       lg: '1024px',
       xl: '1170px',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('/src/assets/img/hero/bg.png')",
+      },
+    },
   },
   plugins: [],
 };
