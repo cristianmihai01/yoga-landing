@@ -1,14 +1,15 @@
 import React from 'react';
-import Nav from './Nav';
-// import Image
-import Image from '../assets/img/hero/guy.png';
-import CircleImage from '../assets/img/hero/bg.png';
 
+// import components
+import Nav from './Nav';
+// import parallax
 import { Parallax } from 'react-parallax';
+// import image
+import Image from '../assets/img/hero/guy.png';
 
 const Hero = () => {
   return (
-    <section className='min-h-[618px] lg:min-h-[815px] bg-red-200 pt-[38px] bg-hero bg-no-repeat bg-right-top'>
+    <section className='min-h-[618px] lg:min-h-[815px] pt-[38px] bg-hero bg-no-repeat bg-right-top'>
       <div className='container mx-auto'>
         <Nav />
         <div className='flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-48'>
@@ -20,12 +21,12 @@ const Hero = () => {
             >
               Yoga to <br /> Release Stress
             </h1>
-            <p data-aos='fade-down' data-aos-delay='600'>
+            <p className='mb-6' data-aos='fade-down' data-aos-delay='600'>
               Yoga is a way of life, rather than a chore. Counteract the
               stresses of modern life by becoming more mindful and
               compassionate.
             </p>
-            <div data-aos='fade-down' data-aos-delay='700'>
+            <div className='mb-12' data-aos='fade-down' data-aos-delay='700'>
               buttons
             </div>
           </div>
