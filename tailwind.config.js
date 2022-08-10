@@ -49,6 +49,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         circle: "url('/src/assets/img/hero/bg.png')",
+        cardsBg: "url('/src/assets/img/cards/bg.png')",
       },
     },
     boxShadow: {

@@ -28,7 +28,7 @@ const Header = () => {
           <img src={Logo} alt='' />
         </a>
         {/* nav */}
-        <div className='hidden lg:flex '>
+        <div className='hidden lg:flex'>
           <Nav />
         </div>
       </div>
