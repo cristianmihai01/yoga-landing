@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cards = () => {
   return (
-    <section className='bg-cardsBg min-h-[260px]'>
+    <section className='bg-cardsBg min-h-[260px] pb-[55px]'>
       <div className='container mx-auto flex flex-col lg:flex-row gap-x-[32px]'>
         <div className='flex-1 flex gap-x-[15px] lg:gap-x-[32px] -mt-[38px] lg:-mt-[77px] z-10'>
           <div className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md h-[262px]'>
