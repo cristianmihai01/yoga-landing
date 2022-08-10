@@ -20,7 +20,7 @@ const Header = () => {
     <header
       className={`${
         header ? 'top-0 h-[80px]' : 'top-9'
-      } fixed bg-white w-full max-w-[90vw] lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 z-10 transition-all duration-500 flex items-center justify-between`}
+      } fixed bg-white w-full max-w-[90vw] lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 z-20 transition-all duration-500 flex items-center justify-between`}
     >
       <div className='flex items-center'>
         {/* logo */}
