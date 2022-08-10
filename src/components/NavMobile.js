@@ -9,9 +9,9 @@ const NavMobile = () => {
     <nav>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className='cursor-pointer lg:hidden'
+        className='cursor-pointer text-4xl text-heading ml-[10px] lg:hidden'
       >
-        <BiMenu className='text-4xl' />
+        <BiMenu />
       </div>
       <ul
         className={`${
