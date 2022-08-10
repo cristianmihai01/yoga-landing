@@ -44,10 +44,12 @@ module.exports = {
       bg: '#F5F6F9',
       shape: '#E8EEF0',
       white: '#FFFFFF',
+      transparent: 'transparent',
     },
-    extend: {},
-    backgroundImage: {
-      hero: "url('/src/assets/img/hero/bg.png')",
+    extend: {
+      backgroundImage: {
+        circle: "url('/src/assets/img/hero/bg.png')",
+      },
     },
     boxShadow: {
       primary: '0px 18px 36px rgba(0, 0, 0, 0.05)',

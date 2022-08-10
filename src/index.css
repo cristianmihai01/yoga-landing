@@ -23,10 +23,31 @@
   .h3 {
     @apply text-[18px] leading-[28px] lg:text-[34px] lg:leading-[44px] font-semibold;
   }
+  .h4 {
+    @apply text-[14px] leading-[16px] lg:text-[26px] lg:leading-[36px] font-bold;
+  }
+  .h5 {
+    @apply text-[12px] leading-[22px] lg:text-[24px] lg:leading-[34px] font-semibold;
+  }
+  .h6 {
+    @apply text-[10px] leading-[20px] lg:text-[20px] lg:leading-[30px] font-semibold;
+  }
   .section-sm {
     @apply py-[70px];
   }
   .section-lg {
     @apply py-[150px];
+  }
+  .btn {
+    @apply font-semibold rounded text-base bg-bg;
+  }
+  .btn-sm {
+    @apply h-[48px] px-[25px];
+  }
+  .btn-md {
+    @apply h-[50px] px-[16px];
+  }
+  .btn-lg {
+    @apply h-[58px] rounded-md text-lg px-[40px];
   }
 }

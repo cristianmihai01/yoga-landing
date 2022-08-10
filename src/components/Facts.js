@@ -71,11 +71,14 @@ const Facts = () => {
               <img src={Image} alt='' />
             </div>
             <div
-              className='text-lg font-bold mb-6'
+              className='text-lg font-bold mb-6 text-heading'
               data-aos='fade-down'
               data-aos-delay='700'
             >
-              John Cena <span className='text-base font-normal'>/Founder</span>
+              John Cena{' '}
+              <span className='text-base text-paragraph font-normal'>
+                /Founder
+              </span>
             </div>
           </div>
         </div>
