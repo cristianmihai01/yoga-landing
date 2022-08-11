@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 import Hero from './components/Hero';
 import Cards from './components/Cards';
 import Facts from './components/Facts';
-import Start from './components/Start';
+import Features from './components/Features';
 
 const App = () => {
   Aos.init({
@@ -20,7 +20,7 @@ const App = () => {
       <Hero />
       <Cards />
       <Facts />
-      <Start />
+      <Features />
       <div className='h-[2000px]'></div>
     </div>
   );
