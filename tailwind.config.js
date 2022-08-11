@@ -41,7 +41,7 @@ module.exports = {
         2: '#CFCFCF',
         3: '#F4F5F7',
       },
-      bg: '#F5F6F9',
+      section: '#F5F6F9',
       shape: '#E8EEF0',
       white: '#FFFFFF',
       transparent: 'transparent',

@@ -18,7 +18,9 @@ const Facts = () => {
               0
               <CountUp start={1} end={5} duration={2} enableScrollSpy />+
             </h2>
-            <div className='text-xl font-bold mb-3'>Years of Experience</div>
+            <div className='text-xl text-heading font-bold mb-3'>
+              Years of Experience
+            </div>
             <p className='max-w-[240px]'>
               We are 05 years of experienced in this yoga field. Giving the best
               instructions.
@@ -29,7 +31,9 @@ const Facts = () => {
               <CountUp start={1} end={5} duration={2} enableScrollSpy />
               K+
             </h2>
-            <div className='text-xl font-bold mb-3'>Happy Clients</div>
+            <div className='text-xl text-heading font-bold mb-3'>
+              Happy Clients
+            </div>
             <p className='max-w-[240px]'>
               We have over five thousand clients all over the world. They are
               very satisfied.
@@ -40,7 +44,9 @@ const Facts = () => {
               <CountUp start={1} end={15} duration={2} enableScrollSpy={true} />
               +
             </h2>
-            <div className='text-xl font-bold mb-3'>Experienced Trainers</div>
+            <div className='text-xl text-heading font-bold mb-3'>
+              Experienced Trainers
+            </div>
             <p className='max-w-[240px]'>
               We have over fifteen dedicated and experienced trainer for yoga
               and meditation.
@@ -51,7 +57,9 @@ const Facts = () => {
               <CountUp start={1} end={24} duration={2} enableScrollSpy={true} />
               +
             </h2>
-            <div className='text-xl font-bold mb-3'>Monthly Classes</div>
+            <div className='text-xl text-heading font-bold mb-3'>
+              Monthly Classes
+            </div>
             <p className='max-w-[240px]'>
               Yoga is a physical, mental and spritual practice discipline. We
               provide 24+ classes monthly.
