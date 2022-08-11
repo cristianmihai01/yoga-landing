@@ -1,24 +1,34 @@
 import React from 'react';
 
 // image 1
-import Image1 from '../assets/img/cards/card-1.png';
+import CardImage1 from '../assets/img/cards/card-1.png';
+import CardImage2 from '../assets/img/cards/card-2.png';
 
 const Cards = () => {
   return (
-    <section className='bg-cardsBg min-h-[260px] pb-[55px]'>
+    <section className='bg-cardsBg min-h-[260px] pb-[55px] lg:-mt-24'>
       <div className='container mx-auto flex flex-col lg:flex-row gap-x-[32px]'>
+        {/* cards */}
         <div className='flex-1 flex gap-x-[15px] lg:gap-x-[32px] -mt-[38px] lg:-mt-[77px] z-10'>
+          {/* card 1 */}
           <div className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md'>
-            <div className='flex items-center'>
+            <div className='flex items-center mb-[18px] lg:mb-[28px]'>
               <h4 className='h4 mr-8'>Make Your Own Plan For Yoga.</h4>
               <h2 className='h2 text-stroke-2'>1</h2>
             </div>
             <div>
-              <img src={Image1} alt='' />
+              <img src={CardImage1} alt='' />
             </div>
           </div>
+          {/* card 2 */}
           <div className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md'>
-            card 2
+            <div className='flex items-center mb-[18px] lg:mb-[28px]'>
+              <h4 className='h4 mr-8'>Find a Yoga Mentor For You.</h4>
+              <h2 className='h2 text-stroke-2'>2</h2>
+            </div>
+            <div>
+              <img src={CardImage2} alt='' />
+            </div>
           </div>
         </div>
         <div className='bg-white w-full max-w-[542px] p-[14px] lg:p-[26px] -mt-[38px] lg:-mt-[77px] z-10 shadow-2xl rounded-md'>

@@ -10,8 +10,8 @@ const Hero = () => {
     <section className='min-h-[618px] lg:min-h-[815px] pt-[38px] lg:bg-circle lg:bg-no-repeat lg:bg-right-top'>
       <div className='container mx-auto'>
         <Header />
-        <div className='flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-48'>
-          <div className='flex-1 lg:mt-6'>
+        <div className='flex flex-col items-center lg:flex-row lg:items-start pt-32 lg:pt-32'>
+          <div className='flex-1 lg:mt-12'>
             <h1
               className='h1 mb-3 lg:mb-[22px]'
               data-aos='fade-down'
@@ -47,9 +47,9 @@ const Hero = () => {
               data-aos='fade-left'
               data-aos-delay='800'
             >
-              <div className='w-[234px] h-[344px] lg:w-[504px] lg:h-[744px]'>
+              <div className='w-[234px] h-[234px] lg:w-[504px] lg:h-[744px] lg:mt-0'>
                 <Parallax
-                  className='w-full h-full p-24 lg:p-16'
+                  className='w-full h-full p-28 lg:p-16'
                   bgImage={Image}
                   bgImageAlt='guy'
                   strength={200}
