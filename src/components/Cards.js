@@ -7,7 +7,10 @@ import CardImage3 from '../assets/img/cards/card-3.png';
 
 const Cards = () => {
   return (
-    <section className='bg-cardsBg min-h-[260px] pb-[55px] lg:-mt-24'>
+    <section
+      className='bg-cardsBg min-h-[260px] pb-[55px] lg:-mt-24'
+      data-aos='fade-up'
+    >
       <div className='container mx-auto flex flex-col lg:flex-row gap-x-[32px]'>
         {/* card group */}
         <div className='flex-1 flex gap-x-[15px] lg:gap-x-[32px] -mt-[38px] lg:-mt-[77px] z-10 mx-auto'>

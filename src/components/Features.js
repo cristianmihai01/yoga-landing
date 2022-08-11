@@ -12,7 +12,12 @@ const Features = () => {
   return (
     <section className='bg-section min-h-[428px] pt-8 pb-[150px] mt-[120px] lg:mt-[130px]'>
       <div className='container mx-auto'>
-        <div className='bg-video bg-cover bg-center bg-no-repeat h-[310px] lg:h-[622px] w-full flex justify-center items-center rounded-md -mt-[150px] mb-20'>
+        <div
+          className='bg-video bg-cover bg-center bg-no-repeat h-[310px] lg:h-[622px] w-full flex justify-center items-center rounded-md -mt-[150px] mb-20'
+          data-aos='fade-up'
+          data-aos-offset='300'
+          data-aos-duration='2000'
+        >
           {/* play btn */}
           <div
             onClick={() => setOpen(!isOpen)}
