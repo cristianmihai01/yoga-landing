@@ -41,7 +41,9 @@
     "postcss": "^8.4.16",
     "react-countup": "^6.3.0",
     "react-icons": "^4.4.0",
+    "react-modal-video": "^1.2.10",
     "react-parallax": "^3.5.1",
+    "sass": "^1.54.4",
     "tailwindcss": "^3.1.8"
   }
 }

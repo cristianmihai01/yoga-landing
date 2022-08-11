@@ -12,16 +12,17 @@ import Start from './components/Start';
 
 const App = () => {
   Aos.init({
-    duration: 1500,
+    duration: 1800,
+    offset: 0,
   });
   return (
-    <>
+    <div className='overflow-hidden'>
       <Hero />
       <Cards />
       <Facts />
       <Start />
       <div className='h-[2000px]'></div>
-    </>
+    </div>
   );
 };
 

@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// import modal video
+import ModalVideo from 'react-modal-video';
+import '../video.scss';
 
 const Start = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
-    <section className='bg-section h-full max-h-[864px]'>
+    <section className='bg-pink-100 min-h-[428px]'>
       <div className='container mx-auto'>
-        <div className='h-96 -mt-8 bg-green-100'>Video</div>
+        <div className='bg-green-200'>
+          <button>btn</button>
+        </div>
+        {/* video */}
       </div>
+      <ModalVideo
+        channel='youtube'
+        autoplay
+        isOpen={isOpen}
+        videoId='klmBssEYkdU'
+        onClose={() => setOpen(false)}
+      />
     </section>
   );
 };
