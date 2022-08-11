@@ -10,9 +10,9 @@ import { BsPlayCircleFill } from 'react-icons/bs';
 const Features = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className='bg-pink-200'>
+    <section className='bg-section min-h-[428px] pt-8 pb-[150px] mt-[120px] lg:mt-[130px]'>
       <div className='container mx-auto'>
-        <div className='bg-video bg-cover bg-center bg-no-repeat h-[35vh] lg:h-[622px] w-full max-w-[90vw] flex justify-center items-center rounded-md'>
+        <div className='bg-video bg-cover bg-center bg-no-repeat h-[310px] lg:h-[622px] w-full flex justify-center items-center rounded-md -mt-[150px] mb-20'>
           {/* play btn */}
           <div
             onClick={() => setOpen(!isOpen)}
