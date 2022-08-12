@@ -21,20 +21,27 @@ const Features = () => {
           {/* play btn */}
           <div
             onClick={() => setOpen(!isOpen)}
-            className='text-4xl lg:text-[120px] text-orange cursor-pointer hover:scale-110 transition'
+            className='text-6xl lg:text-[120px] text-orange cursor-pointer hover:scale-110 transition'
           >
             <BsPlayCircleFill />
           </div>
         </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ea
-          hic accusantium deserunt rem repellendus quam atque nesciunt! Natus
-          quas cumque et cum accusamus, laborum unde labore ratione magnam
-          soluta voluptatibus, quo cupiditate nostrum aspernatur eaque odio? Quo
-          fugit sint minima ad, doloremque quaerat soluta necessitatibus nostrum
-          quod. Ullam suscipit et commodi debitis beatae fugit, dolorem unde a,
-          doloribus ipsa recusandae ab iusto nesciunt error molestias, veritatis
-          rem provident quas?
+        <div className='flex flex-col lg:flex-row lg:gap-x-8'>
+          <div className='flex-1'>
+            <div className='w-9 h-[2px] bg-orange mb-2 lg:w-[70px] rounded-full'></div>
+            <h2 className='h2 mb-3 lg:mb-0'>
+              The Better Way to <br /> Start Yoga
+            </h2>
+          </div>
+          <div className='flex-1'>
+            <p className='max-w-[360px] mb-[18px] lg:mb-[38px]'>
+              Practice anywhere, anytime. Explore a new way to exercise and
+              learn more about yourself. We are providing the best.
+            </p>
+            <button className='btn btn-sm bg-orange text-white'>
+              Get started
+            </button>
+          </div>
         </div>
       </div>
       {/* video */}

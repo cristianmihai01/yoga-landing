@@ -45,7 +45,7 @@ const Hero = () => {
             <div
               className='flex-1 flex justify-center lg:justify-end'
               data-aos='fade-left'
-              data-aos-delay='1400'
+              data-aos-delay='600'
             >
               <div className='w-[234px] h-[234px] lg:w-[504px] lg:h-[744px] lg:mt-0'>
                 <Parallax
