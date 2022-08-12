@@ -68,7 +68,7 @@ const Courses = () => {
           <div
             className='w-full max-w-[368px] px-[18px] pb-[26px] lg:px-[28px] lg:pb-[38px] bg-white hover:shadow-primary flex flex-col rounded-[14px] mx-auto transition'
             data-aos='fade-up'
-            data-aos-delay='700'
+            data-aos-delay='800'
           >
             <div className='-mt-[38px] lg:-mt-12 mb-4 lg:mb-6'>
               <img src={CourseImg2} alt='' />
@@ -100,7 +100,7 @@ const Courses = () => {
           <div
             className='w-full max-w-[368px] px-[18px] pb-[26px] lg:px-[28px] lg:pb-[38px] bg-white hover:shadow-primary flex flex-col rounded-[14px] mx-auto transition'
             data-aos='fade-up'
-            data-aos-delay='800'
+            data-aos-delay='1000'
           >
             <div className='-mt-[38px] lg:-mt-12 mb-4 lg:mb-6'>
               <img src={CourseImg3} alt='' />
