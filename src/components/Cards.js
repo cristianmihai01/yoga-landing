@@ -10,8 +10,8 @@ const Cards = () => {
     <section
       className='bg-cardsBg min-h-[260px] pb-[55px] lg:-mt-24'
       data-aos='fade-up'
-      data-aos-delay='1000'
-      data-aos-duration='2000'
+      data-aos-delay='800'
+      data-aos-duration='1600'
     >
       <div className='container mx-auto flex flex-col lg:flex-row gap-x-[32px]'>
         {/* card group */}
