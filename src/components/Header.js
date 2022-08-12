@@ -34,10 +34,10 @@ const Header = () => {
       </div>
       <div className='flex items-center'>
         <div className='flex gap-x-4 lg:gap-x-9'>
-          <button className='text-heading font-semibold text-sm lg:text-base'>
+          <button className='text-heading font-medium text-sm lg:text-base hover:text-orange transition'>
             Sign In
           </button>
-          <button className='btn btn-md lg:px-[30px] bg-orange-100 border border-orange text-orange font-medium text-sm lg:text-base'>
+          <button className='btn btn-md lg:px-[30px] bg-orange-100 border border-orange text-orange font-medium text-sm lg:text-base hover:bg-orange-200 hover:text-white transition'>
             Sign Up
           </button>
         </div>

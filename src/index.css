@@ -9,12 +9,12 @@
   a {
     @apply hover:text-orange transition;
   }
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply text-heading;
   }
   .h1 {
@@ -26,6 +26,7 @@
   .h3 {
     @apply text-[18px] leading-[28px] lg:text-[34px] lg:leading-[44px] font-semibold;
   }
+
   .section-sm {
     @apply py-[70px];
   }
@@ -33,7 +34,7 @@
     @apply py-[150px];
   }
   .btn {
-    @apply font-semibold rounded text-base bg-shape;
+    @apply font-medium rounded text-base bg-shape;
   }
   .btn-sm {
     @apply h-[48px] px-[25px];
@@ -43,5 +44,8 @@
   }
   .btn-lg {
     @apply h-[58px] rounded-md text-lg px-[40px];
+  }
+  .btn-orange {
+    @apply bg-orange text-white hover:bg-orange-hover transition;
   }
 }

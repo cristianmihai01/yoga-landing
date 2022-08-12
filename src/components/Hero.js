@@ -33,10 +33,10 @@ const Hero = () => {
               data-aos='fade-down'
               data-aos-delay='700'
             >
-              <button className='btn btn-sm lg:btn-lg bg-orange text-white'>
+              <button className='btn btn-sm lg:btn-lg btn-orange'>
                 Get started
               </button>
-              <button className='btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4'>
+              <button className='btn btn-sm lg:btn-lg text-heading bg-transparent border border-stroke-1 px-4 lg:px-4 hover:bg-stroke-3 transition'>
                 Learn more
               </button>
             </div>
