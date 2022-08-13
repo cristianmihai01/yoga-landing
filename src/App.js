@@ -10,6 +10,7 @@ import Cards from './components/Cards';
 import Facts from './components/Facts';
 import Features from './components/Features';
 import Courses from './components/Courses';
+import Pricing from './components/Pricing';
 
 const App = () => {
   Aos.init({
@@ -23,6 +24,7 @@ const App = () => {
       <Facts />
       <Features />
       <Courses />
+      <Pricing />
       <div className='h-[2000px]'></div>
     </div>
   );
