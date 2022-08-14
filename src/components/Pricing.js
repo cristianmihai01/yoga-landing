@@ -23,7 +23,7 @@ const Pricing = () => {
             return (
               <div
                 onClick={() => setIndex(currentIndex)}
-                className='w-full max-w-[368px] h-[668px] bg-white cursor-pointer'
+                className='w-full max-w-[368px] min-h-[668px] h-full bg-white cursor-pointer relative'
                 key={currentIndex}
               >
                 {/* card top */}
@@ -32,15 +32,14 @@ const Pricing = () => {
                     index === currentIndex
                       ? 'bg-orange text-white'
                       : 'bg-white text-heading'
-                  } text-center pb-[34px] pt-[70px] transition`}
+                  } text-center pb-[34px] pt-[70px] border-b border-stroke-3 transition`}
                 >
                   <div className='text-[24px] font-medium mb-[10px]'>
                     {title}
                   </div>
                   <div className='text-[34px] font-semibold'>{price}</div>
                 </div>
-                {/* line */}
-                <div className='h-0.5 bg-stroke-3 w-full'></div>
+
                 <div className='px-[30px] pt-[18px] pb-[30px]'>
                   <p className='text-center mb-6 text-sm'>
                     Discover your favorite class!
@@ -63,12 +62,14 @@ const Pricing = () => {
                     })}
                   </ul>
                   {/* btn */}
-                  <button className='w-full h-[50px] border border-orange rounded flex items-center justify-center relative text-orange font-medium hover:bg-orange hover:text-white transition'>
-                    {buttonText}
-                    <div className='w-[50px] h-[50px] flex justify-center items-center bg-orange absolute right-0 text-white'>
-                      {buttonIcon}
-                    </div>
-                  </button>
+                  <div className='absolute bottom-[30px] left-0 right-0 w-full px-[30px]'>
+                    <button className='w-full h-[50px] border border-orange rounded flex items-center justify-center text-orange font-medium hover:bg-orange hover:text-white transition relative'>
+                      {buttonText}
+                      <div className='w-[50px] h-[50px] flex justify-center items-center bg-orange absolute right-0 text-white'>
+                        {buttonIcon}
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </div>
             );
