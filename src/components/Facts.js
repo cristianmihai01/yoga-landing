@@ -4,6 +4,8 @@ import React from 'react';
 import CountUp from 'react-countup';
 // import image
 import Image from '../assets/img/john-cena.png';
+// import data
+import { facts } from '../data';
 
 const Facts = () => {
   return (
@@ -13,58 +15,26 @@ const Facts = () => {
           className='flex-1 flex flex-wrap gap-x-[5%] gap-y-[35px]'
           data-aos='fade-up'
         >
-          <div className='w-[45%]'>
-            <h2 className='h2 mb-2 lg:mb-4'>
-              0
-              <CountUp start={1} end={5} duration={2} enableScrollSpy />+
-            </h2>
-            <div className='text-xl text-heading font-bold mb-3'>
-              Years of Experience
-            </div>
-            <p className='max-w-[240px]'>
-              We are 05 years of experienced in this yoga field. Giving the best
-              instructions.
-            </p>
-          </div>
-          <div className='w-[45%]'>
-            <h2 className='h2 mb-2 lg:mb-4'>
-              <CountUp start={1} end={5} duration={2} enableScrollSpy />
-              K+
-            </h2>
-            <div className='text-xl text-heading font-bold mb-3'>
-              Happy Clients
-            </div>
-            <p className='max-w-[240px]'>
-              We have over five thousand clients all over the world. They are
-              very satisfied.
-            </p>
-          </div>
-          <div className='w-[45%]'>
-            <h2 className='h2 mb-2 lg:mb-4'>
-              <CountUp start={1} end={15} duration={2} enableScrollSpy={true} />
-              +
-            </h2>
-            <div className='text-xl text-heading font-bold mb-3'>
-              Experienced Trainers
-            </div>
-            <p className='max-w-[240px]'>
-              We have over fifteen dedicated and experienced trainer for yoga
-              and meditation.
-            </p>
-          </div>
-          <div className='w-[45%]'>
-            <h2 className='h2 mb-2 lg:mb-4'>
-              <CountUp start={1} end={24} duration={2} enableScrollSpy={true} />
-              +
-            </h2>
-            <div className='text-xl text-heading font-bold mb-3'>
-              Monthly Classes
-            </div>
-            <p className='max-w-[240px]'>
-              Yoga is a physical, mental and spritual practice discipline. We
-              provide 24+ classes monthly.
-            </p>
-          </div>
+          {facts.map((item, index) => {
+            const { startNumber, endNumber, unit, title, desc } = item;
+            return (
+              <div className='w-[45%]' key={index}>
+                <h2 className='h2 mb-2 lg:mb-4'>
+                  <CountUp
+                    start={startNumber}
+                    end={endNumber}
+                    duration={2}
+                    enableScrollSpy
+                  />
+                  {unit}+
+                </h2>
+                <div className='text-xl text-heading font-bold mb-3'>
+                  {title}
+                </div>
+                <p className='max-w-[240px]'>{desc}</p>
+              </div>
+            );
+          })}
         </div>
         <div className='flex-1 -order-1 lg:order-none'>
           <div className='flex flex-col justify-center h-full lg:pl-[100px]'>
@@ -83,7 +53,7 @@ const Facts = () => {
               data-aos='fade-down'
               data-aos-delay='700'
             >
-              John Cena{' '}
+              John Cena
               <span className='text-base text-paragraph font-normal'>
                 /Founder
               </span>

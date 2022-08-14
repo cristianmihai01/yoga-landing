@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import icons
-import { BsCheck } from 'react-icons/bs';
+import { BsCheck, BsChevronRight } from 'react-icons/bs';
 
 const Pricing = () => {
   return (
@@ -53,9 +53,11 @@ const Pricing = () => {
                 </li>
               </ul>
               {/* btn */}
-              <button className='btn-md w-full bg-none border border-orange rounded'>
-                btn
-                <span className=''>arr</span>
+              <button className='w-full h-[50px] border border-orange rounded flex items-center justify-center relative text-orange font-medium hover:bg-orange hover:text-white transition'>
+                Book now
+                <div className='w-[50px] h-[50px] flex justify-center items-center bg-orange absolute right-0 text-white'>
+                  <BsChevronRight />
+                </div>
               </button>
             </div>
           </div>
