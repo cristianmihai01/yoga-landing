@@ -63,9 +63,19 @@ const Pricing = () => {
                   </ul>
                   {/* btn */}
                   <div className='absolute bottom-[30px] left-0 right-0 w-full px-[30px]'>
-                    <button className='w-full h-[50px] border border-orange rounded flex items-center justify-center text-orange font-medium hover:bg-orange hover:text-white transition relative'>
+                    <button
+                      className={`${
+                        index === currentIndex
+                          ? ' bg-orange text-white'
+                          : ' border-orange'
+                      } w-full h-[50px] rounded border border-orange flex items-center justify-center text-orange font-medium transition relative`}
+                    >
                       {buttonText}
-                      <div className='w-[50px] h-[50px] flex justify-center items-center bg-orange absolute right-0 text-white'>
+                      <div
+                        className={`${
+                          index === currentIndex ? 'bg-orange-200' : 'bg-orange'
+                        } w-[50px] h-[50px] flex justify-center items-center absolute right-0 rounded text-white`}
+                      >
                         {buttonIcon}
                       </div>
                     </button>
