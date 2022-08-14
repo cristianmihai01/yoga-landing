@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { pricing } from '../data';
 
 const Pricing = () => {
-  const [active, setActive] = useState(false);
   const [index, setIndex] = useState(0);
   return (
     <section className='section-sm lg:section-lg bg-section'>
@@ -24,17 +23,21 @@ const Pricing = () => {
             return (
               <div
                 onClick={() => setIndex(currentIndex)}
-                className={`${
-                  index === currentIndex ? 'bg-orange' : 'bg-white'
-                } w-full max-w-[368px]`}
+                className='w-full max-w-[368px] h-[668px] bg-white cursor-pointer'
                 key={currentIndex}
               >
                 {/* card top */}
-                <div className='text-center mb-[34px] mt-[70px]'>
-                  <h5 className='text-[24px] font-medium mb-[10px]'>{title}</h5>
-                  <div className='text-[34px] font-semibold text-heading'>
-                    {price}
+                <div
+                  className={`${
+                    index === currentIndex
+                      ? 'bg-orange text-white'
+                      : 'bg-white text-heading'
+                  } text-center pb-[34px] pt-[70px] transition`}
+                >
+                  <div className='text-[24px] font-medium mb-[10px]'>
+                    {title}
                   </div>
+                  <div className='text-[34px] font-semibold'>{price}</div>
                 </div>
                 {/* line */}
                 <div className='h-0.5 bg-stroke-3 w-full'></div>
@@ -43,17 +46,18 @@ const Pricing = () => {
                     Discover your favorite class!
                   </p>
                   {/* card list */}
-                  <ul className='flex flex-col gap-5 mb-24'>
+                  <ul className='flex flex-col gap-3 mb-10'>
                     {list.map((item, index) => {
+                      const { icon, name } = item;
                       return (
                         <li
                           className='border border-stroke-3 p-4 rounded-md flex items-center gap-4'
                           key={index}
                         >
                           <div className='flex justify-center items-center bg-green-100 w-7 h-7 text-2xl text-green-300 rounded-full'>
-                            {item.icon}
+                            {icon}
                           </div>
-                          {item.name}
+                          {name}
                         </li>
                       );
                     })}

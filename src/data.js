@@ -119,6 +119,10 @@ export const pricing = [
         icon: <BsCheck />,
         name: 'Acces to all classes',
       },
+      {
+        icon: <BsCheck />,
+        name: 'Acces to all mentors',
+      },
     ],
     buttonText: 'Book now',
     buttonIcon: <BsChevronRight />,
@@ -139,6 +143,10 @@ export const pricing = [
       {
         icon: <BsCheck />,
         name: 'Acces to all classes',
+      },
+      {
+        icon: <BsCheck />,
+        name: 'Acces to all mentors',
       },
     ],
     buttonText: 'Book now',
