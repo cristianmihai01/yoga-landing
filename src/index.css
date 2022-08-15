@@ -26,7 +26,6 @@
   .h3 {
     @apply text-[18px] leading-[28px] lg:text-[34px] lg:leading-[44px] font-semibold;
   }
-
   .section-sm {
     @apply py-[70px];
   }
@@ -43,9 +42,12 @@
     @apply h-[50px] px-[16px];
   }
   .btn-lg {
-    @apply h-[58px] rounded-md text-lg px-[40px];
+    @apply h-[58px] rounded-md px-[40px];
   }
   .btn-orange {
     @apply bg-orange text-white hover:bg-orange-hover transition;
+  }
+  .form-control {
+    @apply h-[58px] border border-stroke-2 placeholder:text-paragraph text-paragraph;
   }
 }
