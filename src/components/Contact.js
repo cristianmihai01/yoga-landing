@@ -33,22 +33,25 @@ const Contact = () => {
               className='form-control'
               placeholder='First name'
               type='text'
+              required
             />
             <input
               className='form-control'
               placeholder='Last name'
               type='text'
+              required
             />
             <input
               className='form-control'
               placeholder='Email address'
               type='email'
+              required
             />
             <textarea
               className='form-control py-5 h-[165px] resize-none'
               placeholder='Message'
             ></textarea>
-            <button className='btn btn-lg btn-orange self-start'>
+            <button className='btn btn-lg btn-orange self-start' type='submit'>
               Send message
             </button>
           </div>
