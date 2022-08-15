@@ -44,7 +44,7 @@ const Newsletter = () => {
                 placeholder='Enter your email address'
               />
             </div>
-            <button className='btn btn-lg btn-orange text-white w-full max-w-[180px]'>
+            <button className='btn btn-lg btn-orange text-white w-full lg:max-w-[180px]'>
               Get started
             </button>
           </form>

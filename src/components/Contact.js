@@ -10,7 +10,7 @@ const Contact = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setEmailMessage('');
-    }, 1000);
+    }, 3000);
 
     // clear timer
     return () => clearTimeout(timer);
@@ -27,12 +27,10 @@ const Contact = () => {
         'u98H50bVQXiTWT2G4'
       )
       .then(
-        (result) => {
+        (res) => {
           setEmailMessage('Your email was sent :)');
-          console.log(result.text);
         },
-        (error) => {
-          console.log(error.text);
+        (err) => {
           setEmailMessage('Your email was not sent :(');
         }
       );
@@ -98,7 +96,7 @@ const Contact = () => {
             <button className='btn btn-lg btn-orange self-start' type='submit'>
               Send message
             </button>
-            {emailMesssage}
+            <p>{emailMesssage}</p>
           </form>
         </div>
       </div>
