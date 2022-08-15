@@ -32,7 +32,7 @@ const Newsletter = () => {
           <form
             className='max-w-[752px] mx-auto relative flex flex-col lg:flex-row gap-y-6 p-4 lg:p-0 gap-x-4'
             data-aos='fade-up'
-            data-aos-delay='900'
+            data-aos-delay='1000'
           >
             <div className='w-full relative flex'>
               <div className='absolute left-2 h-full w-12 flex justify-center items-center text-2xl text-green-300'>
