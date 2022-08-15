@@ -17,7 +17,11 @@ const Cards = () => {
         {/* card group */}
         <div className='flex-1 flex gap-x-[15px] lg:gap-x-[32px] -mt-[38px] lg:-mt-[77px] z-10 mx-auto'>
           {/* card 1 */}
-          <div className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md max-h-[282px]'>
+          <div
+            className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md max-h-[282px]'
+            data-aos='fade-up'
+            data-aos-delay='400'
+          >
             <div className='flex items-center mb-[18px] lg:mb-[28px]'>
               <h4 className='text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8'>
                 Make Your Own Plan For Yoga.
@@ -29,7 +33,11 @@ const Cards = () => {
             </div>
           </div>
           {/* card 2 */}
-          <div className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md'>
+          <div
+            className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md'
+            data-aos='fade-up'
+            data-aos-delay='600'
+          >
             <div className='flex items-center mb-[18px] lg:mb-[28px]'>
               <h4 className='text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8'>
                 Find a Yoga Mentor For You.
@@ -42,7 +50,11 @@ const Cards = () => {
           </div>
         </div>
         {/* card 3 */}
-        <div className='bg-white w-full max-w-[542px] mx-auto p-[14px] lg:p-[26px] mt-4 lg:-mt-[77px] z-10 shadow-2xl rounded-md flex justify-between items-start'>
+        <div
+          className='bg-white w-full max-w-[542px] mx-auto p-[14px] lg:p-[26px] mt-4 lg:-mt-[77px] z-10 shadow-2xl rounded-md flex justify-between items-start'
+          data-aos='fade-up'
+          data-aos-delay='800'
+        >
           <div className='max-w-[240px]'>
             <div className='flex items-center mb-4 lg:mb-8'>
               <h4 className='text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8'>

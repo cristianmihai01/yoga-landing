@@ -15,8 +15,8 @@ const Features = () => {
         <div
           className='bg-video bg-cover bg-center bg-no-repeat h-[310px] lg:h-[622px] w-full flex justify-center items-center rounded-md -mt-[150px] mb-[28px] lg:mb-20'
           data-aos='fade-up'
-          data-aos-offset='300'
-          data-aos-duration='2000'
+          data-aos-duration='1500'
+          data-aos-offset='500'
         >
           {/* play btn */}
           <div

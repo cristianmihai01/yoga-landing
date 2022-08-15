@@ -10,8 +10,18 @@ const Pricing = () => {
     <section className='section-sm lg:section-lg bg-section'>
       <div className='container mx-auto'>
         <div className='text-center mb-7 lg:mb-[70px]'>
-          <h2 className='h2 mb-3 lg:mb-[18px]'>Pick a Pricing Plan</h2>
-          <p className='max-w-[398px] mx-auto'>
+          <h2
+            className='h2 mb-3 lg:mb-[18px]'
+            data-aos='fade-up'
+            data-aos-delay='600'
+          >
+            Pick a Pricing Plan
+          </h2>
+          <p
+            className='max-w-[398px] mx-auto'
+            data-aos='fade-up'
+            data-aos-delay='700'
+          >
             Pick a pricing plan and get started your journey with us for build
             your body and mind
           </p>
@@ -19,12 +29,15 @@ const Pricing = () => {
         {/* pricing cards */}
         <div className='flex flex-col mx-auto items-center gap-y-5 lg:flex-row lg:gap-x-[33px]'>
           {pricing.map((card, currentIndex) => {
-            const { title, price, list, buttonIcon, buttonText } = card;
+            const { title, price, list, buttonIcon, buttonText, delay } = card;
             return (
               <div
                 onClick={() => setIndex(currentIndex)}
                 className='w-full max-w-[368px] min-h-[668px] h-full bg-white cursor-pointer relative'
                 key={currentIndex}
+                data-aos='fade-up'
+                data-aos-offset='400'
+                data-aos-delay={delay}
               >
                 {/* card top */}
                 <div
@@ -39,7 +52,6 @@ const Pricing = () => {
                   </div>
                   <div className='text-[34px] font-semibold'>{price}</div>
                 </div>
-
                 <div className='px-[30px] pt-[18px] pb-[30px]'>
                   <p className='text-center mb-6 text-sm'>
                     Discover your favorite class!

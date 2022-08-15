@@ -48,6 +48,6 @@
     @apply bg-orange text-white hover:bg-orange-hover transition;
   }
   .form-control {
-    @apply h-[58px] border border-stroke-2 placeholder:text-paragraph text-paragraph;
+    @apply h-[58px] border border-stroke-2 rounded pl-6 placeholder:text-paragraph text-paragraph outline-none;
   }
 }

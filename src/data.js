@@ -82,7 +82,6 @@ export const courses = [
 
 export const pricing = [
   {
-    preTitle: '',
     title: 'Single yoga class',
     price: '$15.',
     list: [
@@ -101,9 +100,9 @@ export const pricing = [
     ],
     buttonText: 'Book now',
     buttonIcon: <BsChevronRight />,
+    delay: '600',
   },
   {
-    preTitle: '',
     title: 'Single yoga class',
     price: '$60.',
     list: [
@@ -126,9 +125,9 @@ export const pricing = [
     ],
     buttonText: 'Book now',
     buttonIcon: <BsChevronRight />,
+    delay: '800',
   },
   {
-    preTitle: '',
     title: 'Single yoga class',
     price: '$150.',
     list: [
@@ -151,5 +150,6 @@ export const pricing = [
     ],
     buttonText: 'Book now',
     buttonIcon: <BsChevronRight />,
+    delay: '900',
   },
 ];

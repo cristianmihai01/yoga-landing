@@ -12,11 +12,13 @@ import Features from './components/Features';
 import Courses from './components/Courses';
 import Pricing from './components/Pricing';
 import Newsletter from './components/Newsletter';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   Aos.init({
     duration: 1800,
-    offset: 0,
+    offset: 100,
   });
   return (
     <div className='overflow-hidden'>
@@ -27,7 +29,8 @@ const App = () => {
       <Courses />
       <Pricing />
       <Newsletter />
-      <div className='h-[2000px]'></div>
+      <Contact />
+      <Footer />
     </div>
   );
 };
