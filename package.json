@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "@emailjs/browser": "^3.6.2",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",

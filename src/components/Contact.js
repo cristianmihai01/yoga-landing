@@ -1,6 +1,46 @@
-import React from 'react';
+import React, { useRef } from 'react';
+
+// import email js
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Contact = () => {
+  const form = useRef();
+  const [emailMesssage, setEmailMessage] = useState('');
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setEmailMessage('');
+    }, 1000);
+
+    // clear timer
+    return () => clearTimeout(timer);
+  }, [emailMesssage]);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_elsey6m',
+        'template_eoewuah',
+        form.current,
+        'u98H50bVQXiTWT2G4'
+      )
+      .then(
+        (result) => {
+          setEmailMessage('Your email was sent :)');
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+          setEmailMessage('Your email was not sent :(');
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section className='section-sm lg:pt-[250px]'>
       <div className='container mx-auto'>
@@ -23,7 +63,9 @@ const Contact = () => {
               the best and also here to help you to find your yoga course.
             </p>
           </div>
-          <div
+          <form
+            onSubmit={(e) => sendEmail(e)}
+            ref={form}
             className='flex-1 bg-white shadow-primary rounded-[20px] p-5 lg:p-10 flex flex-col gap-y-5 max-h-[600px] lg:-mt-20'
             data-aos='fade-up'
             data-aos-delay='300'
@@ -33,28 +75,33 @@ const Contact = () => {
               className='form-control'
               placeholder='First name'
               type='text'
+              name='user_firstname'
               required
             />
             <input
               className='form-control'
               placeholder='Last name'
               type='text'
+              name='user_lastname'
               required
             />
             <input
               className='form-control'
               placeholder='Email address'
               type='email'
+              name='user_email'
               required
             />
             <textarea
               className='form-control py-5 h-[165px] resize-none'
               placeholder='Message'
+              name='user_message'
             ></textarea>
             <button className='btn btn-lg btn-orange self-start' type='submit'>
               Send message
             </button>
-          </div>
+            {emailMesssage}
+          </form>
         </div>
       </div>
     </section>
