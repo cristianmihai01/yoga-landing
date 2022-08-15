@@ -4,7 +4,11 @@ const Contact = () => {
   return (
     <section className='section-sm lg:pt-[250px]'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row lg:gap-x-[74px] bg-contact bg-no-repeat bg-cover min-h-[600px]'>
+        <div
+          className='flex flex-col lg:flex-row lg:gap-x-[74px] bg-contact bg-no-repeat bg-cover min-h-[600px]'
+          data-aos='zoom'
+          data-aos-offset='400'
+        >
           <div
             className='flex-1 flex flex-col justify-center pl-8'
             data-aos='fade-down'
