@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
   const form = useRef();
   const [emailMesssage, setEmailMessage] = useState('');
+  const [emailTextColor, setEmailTextColor] = useState('');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,9 +30,11 @@ const Contact = () => {
       .then(
         (res) => {
           setEmailMessage('Your email was sent :)');
+          setEmailTextColor('green');
         },
         (err) => {
           setEmailMessage('Your email was not sent :(');
+          setEmailTextColor('red');
         }
       );
     e.target.reset();
@@ -96,7 +99,7 @@ const Contact = () => {
             <button className='btn btn-lg btn-orange self-start' type='submit'>
               Send message
             </button>
-            <p>{emailMesssage}</p>
+            <p style={{ color: emailTextColor }}>{emailMesssage}</p>
           </form>
         </div>
       </div>
