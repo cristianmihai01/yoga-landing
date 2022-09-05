@@ -46,16 +46,15 @@ const Facts = () => {
               Relax And Enjoy a Personalized Day Yoga With Us.
             </h2>
             <div className='mb-2' data-aos='fade-down' data-aos-delay='600'>
-              <img src={Image} alt='' />
             </div>
             <div
               className='text-lg font-bold mb-6 text-heading'
               data-aos='fade-down'
               data-aos-delay='700'
             >
-              John Cena
+              Amrendra Chaudhary : 
               <span className='text-base text-paragraph font-normal'>
-                /Founder
+                / Founder
               </span>
             </div>
           </div>
