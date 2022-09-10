@@ -83,7 +83,7 @@ export const courses = [
 export const pricing = [
   {
     title: 'Single yoga class',
-    price: '$15.',
+    price: 'INR250.',
     list: [
       {
         icon: <BsCheck />,
@@ -104,7 +104,7 @@ export const pricing = [
   },
   {
     title: 'Single yoga class',
-    price: '$60.',
+    price: 'INR500.',
     list: [
       {
         icon: <BsCheck />,
@@ -129,7 +129,7 @@ export const pricing = [
   },
   {
     title: 'Single yoga class',
-    price: '$150.',
+    price: 'INR750.',
     list: [
       {
         icon: <BsCheck />,

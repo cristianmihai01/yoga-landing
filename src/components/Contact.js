@@ -22,17 +22,17 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_elsey6m',
-        'template_eoewuah',
+        'service_613h09j',
+        'template_cbvcsw8',
         form.current,
-        'u98H50bVQXiTWT2G4'
+        'v_2k7jzggGq1oLw_p'
       )
       .then(
-        (res) => {
+        (result) => {
           setEmailMessage('Your email was sent :)');
           setEmailTextColor('green');
         },
-        (err) => {
+        (error) => {
           setEmailMessage('Your email was not sent :(');
           setEmailTextColor('red');
         }
